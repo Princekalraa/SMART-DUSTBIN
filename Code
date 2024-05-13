@@ -1,0 +1,12 @@
+//CODE: 
+
+#include <Servo.h>                         
+Servo myservo;                              
+void setup() { myservo.attach(13); 
+  pinMode (12, INPUT); }
+void loop(){ int statusSensor = digitalRead(12);
+  if (statusSensor == 0){
+     myservo.write(0);.
+     delay(100);   }      
+  else{ myservo.write(120);
+  delay(3000);}  }
